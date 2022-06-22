@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //assiging to properties
+        let obj={};
+        obj.name = "Naima"
+        obj.age = 21;
+
+        console.log(obj);
+       
+        let key1="name";
+        let namea= obj["name"];
+        console.log(namea);
+
+       let nameb=obj["name"];
+       let ageb=obj.age;
+       console.log(nameb)
+
+
+      //destructuring properties
+      const {name,age}= obj;
+      console.log("destructuring properties:",name,age);
+      const students =["Tessa","Naima","Brenda","Rosemary","Shirleen"]
+      const[one,two,three,four,five]=students
+
+      console.log("destructuring students:",one,two,three,four,five);
+  
+    </script>
+</body>
+</html>
